@@ -21,4 +21,8 @@ class Doctor
     self.appointments.last
   end 
   
+  def patients 
+    
+  end 
+  
 end 
