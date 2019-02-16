@@ -14,7 +14,14 @@ class Patient
    Appointment.new(doctor, self, date)
    self.appointments.last  
   end 
-   self.appointments.map do |element|
-      element.patient 
+   
+   def appointments 
+     self.appointments.map do |doctor|
+       doctor.doctors
+     end 
+   end 
+   #self.appointments.map do |element|
+      #element.patient 
+       #has many patients, through appointments
   
 end 
