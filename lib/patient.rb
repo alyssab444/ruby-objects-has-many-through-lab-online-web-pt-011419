@@ -14,6 +14,7 @@ class Patient
    Appointment.new(doctor, self, date)
    self.appointments.last  
   end 
-   
+   self.appointments.map do |element|
+      element.patient 
   
 end 
