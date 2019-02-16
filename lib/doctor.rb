@@ -10,4 +10,8 @@ class Doctor
     @@all 
   end 
   
+  def new_appointment(name)
+    
+  end 
+  
 end 
