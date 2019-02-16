@@ -20,6 +20,9 @@ class Patient
        element.doctor
      end 
    end 
+   def doctors 
+     self.doctors
+   end 
    #self.appointments.map do |element|
       #element.patient 
        #has many patients, through appointments
