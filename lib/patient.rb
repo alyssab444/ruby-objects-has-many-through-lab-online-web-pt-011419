@@ -10,10 +10,11 @@ class Patient
   end 
   
     
-  def new_appointment(doctor, patient)
-   Appointment.new(doctor, self, date)
-   self.appointments.last  
-  end 
+  def new_appointment(doctor, date)
+   
+    Appointment.new(date, self, doctor)
+  end
+
    
    def appointments
     Appointment.all.select{|appointment| appointment.patient == self}
