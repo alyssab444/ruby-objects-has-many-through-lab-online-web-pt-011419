@@ -22,7 +22,9 @@ class Doctor
   end 
   
   def patients 
-    
+    self.appointments.map do |element|
+      element.patients
+    end 
   end 
   
 end 
