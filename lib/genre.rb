@@ -13,6 +13,5 @@ class Genre
      element.genre == self 
     end 
   end  
-  
-  end
+
 end 
