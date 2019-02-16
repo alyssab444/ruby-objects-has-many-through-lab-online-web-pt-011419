@@ -16,8 +16,8 @@ class Patient
   end 
    
    def appointments 
-     self.appointment.map do |doctor|
-       doctor.doctors
+     self.appointment.map do |element|
+       element.doctor
      end 
    end 
    #self.appointments.map do |element|
