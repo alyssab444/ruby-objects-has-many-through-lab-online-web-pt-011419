@@ -8,7 +8,7 @@ class Patient
   def self.all
     @@all 
   end 
-  def appointments 
+  
     
   def new_appointment(doctor, patient)
    Appointment.new(doctor, self, date)
@@ -20,9 +20,7 @@ class Patient
        element.doctor
      end 
    end 
-   def doctors 
-     self.doctors
-   end 
+  
    #self.appointments.map do |element|
       #element.patient 
        #has many patients, through appointments
