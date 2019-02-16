@@ -11,7 +11,7 @@ class Doctor
   end 
   
   def new_appointment(patient, date)
-    appointment.new
+    appointment.new()
   end 
   ef new_song(song, genre)
     Song.new(name, self, genre)
