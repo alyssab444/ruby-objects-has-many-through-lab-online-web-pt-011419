@@ -15,11 +15,9 @@ class Patient
    self.appointments.last  
   end 
    
-   def appointments 
-     self.appointment.select do |element|
-       element.patient 
-     end 
-   end 
+   def appointments
+    Appointment.all.select{|appointment| appointment.patient == self}
+  end
    
     
  
