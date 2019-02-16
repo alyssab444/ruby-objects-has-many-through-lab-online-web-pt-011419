@@ -10,8 +10,13 @@ class Doctor
     @@all 
   end 
   
+  def appointment 
+    
+  end 
+  
   def new_appointment(patient, date)
-    appointment.new(date, patient, doctor)
+    Appointment.new(date, patient, self)
+    self.
   end 
   ef new_song(song, genre)
     Song.new(name, self, genre)
