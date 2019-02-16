@@ -12,4 +12,7 @@ class Song
     @@all
   end 
   
+  def genre 
+    
+  end 
 end 
