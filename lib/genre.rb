@@ -12,6 +12,6 @@ class Genre
     Song.all.select do |element|
      element.artist == self 
     end 
-  end 
+  end  
   
 end 
