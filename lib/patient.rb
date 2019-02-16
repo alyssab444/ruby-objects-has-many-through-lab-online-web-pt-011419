@@ -20,7 +20,7 @@ class Patient
        element.doctor
      end 
    end 
-  
+   Appointment.all.select{|appointment| appointment.patient == self}
    #self.appointments.map do |element|
       #element.patient 
        #has many patients, through appointments
