@@ -17,11 +17,15 @@ class Artist
   
   def new_song(song, genre)
     Song.new(name, self, genre)
+     self.songs.last
   end 
   
   def songs
     Song.all.select do |element|
      element.artist == self 
+    
+  end
+
     end 
   end 
   
