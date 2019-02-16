@@ -15,6 +15,8 @@ class Genre
   end  
   def artist 
     self.songs.map do |element|
-      element.genre 
+      element.artist 
+    end 
+  end 
 
 end 
