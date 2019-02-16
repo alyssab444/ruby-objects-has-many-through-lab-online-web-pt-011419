@@ -28,8 +28,8 @@ class Artist
   end
 
    def genres 
-    song.map do |element|
-      element.genre == self 
+    self.songs.map do |element|
+      element.genre 
     end 
   end 
 
