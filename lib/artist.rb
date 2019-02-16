@@ -23,7 +23,7 @@ class Artist
   def songs
     Song.all.select do |element|
      element.artist == self 
-     edn
+   end 
     
   end
 
