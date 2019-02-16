@@ -8,8 +8,10 @@ class Genre
   def self.all
     @@all 
   end 
-  def songs 
-    
+  def songs
+    Song.all.select do |element|
+     element.artist == self 
+    end 
   end 
   
 end 
