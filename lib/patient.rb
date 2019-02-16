@@ -23,5 +23,5 @@ class Patient
    #self.appointments.map do |element|
       #element.patient 
        #has many patients, through appointments
-  
+  end 
 end 
