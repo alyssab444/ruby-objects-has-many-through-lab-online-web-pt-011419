@@ -16,13 +16,11 @@ class Patient
   end 
    
    def appointments 
-     self.appointment.map do |element|
-       element.doctor
+     self.appointment.select do |element|
+       element.patient 
      end 
    end 
-   Appointment.all.select{|appointment| appointment.patient == self}
-   #self.appointments.map do |element|
-      #element.patient 
-       #has many patients, through appointments
-  end 
+   
+    
+ 
 end 
